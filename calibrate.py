@@ -1,0 +1,71 @@
+import json
+from time import time
+
+from elo import rating_update
+from config import (
+    SEED,  MATCHES, 
+    HOSTS, PARTICIPANTS,
+    HOME_ADVANTAGE,
+    OUTPUT_DIR, 
+)
+
+UPDATE_HOME_ADV = HOME_ADVANTAGE / 2
+
+SEED = {
+    (k if k in PARTICIPANTS else f"ghost:{k}"): v 
+    for k, v in SEED.items()
+}
+    
+
+def now_sec():
+    """Returns the current time in seconds since the epoch."""
+    if MATCHES:
+        return MATCHES[-1]["ts"]
+    return int(time())
+
+
+R = {}
+def getR(slug, name):
+    """Retrieves the Elo rating for a team based on its slug or name."""
+    k = slug if slug is not None else f"ghost:{name}"
+    if k not in R:
+        R[k] = SEED.get(slug, 1500) if slug is not None else 1500
+    return R[k]
+
+def setR(slug, name, v):
+    """Sets the Elo rating for a team based on its slug or name."""
+    R[slug if slug is not None else f"ghost:{name}"] = v
+
+
+if __name__ == "__main__":
+    applied = 0
+    for match in MATCHES:
+        if match['hg'] is None or match['ag'] is None:
+            continue
+        rating_a = getR(match['homeSlug'], match['homeName'])
+        rating_b = getR(match['awaySlug'], match['awayName'])
+
+        # home_advantage = HOME_ADVANTAGE / 2 if match['homeSlug'] in HOSTS else 0
+        # expected = expected_score(rating_a, rating_b, home_advantage)
+        
+        # score = 1.0 if match['hg'] > match['ag'] else 0.0 if match['hg'] < match['ag'] else 0.5
+        # K = base_K(match['leagueName']) * recency(match['ts'], now_sec()) * g_mult(match['hg'] - match['ag'])
+        # delta = K * (score - expected)
+        delta = rating_update(
+            rating_a, rating_b, match['hg'], match['ag'],
+            match['leagueName'], ts=match['ts'], now_sec=now_sec(),
+            home_advantage=UPDATE_HOME_ADV, use_recency=False
+        )
+        setR(match['homeSlug'], match['homeName'], rating_a + delta)
+        setR(match['awaySlug'], match['awayName'], rating_b - delta)
+        applied += 1
+
+
+    ratings = {}
+    for slug in SEED.keys():
+        # ratings[slug] = round(0.65 * R.get(slug, SEED[slug]) + 0.35 * SEED[slug])
+        ratings[slug] = round(R.get(slug, SEED[slug]))
+    with open(f"{OUTPUT_DIR}/elo-calibrated.json", "w", encoding="utf-8") as f:
+        json.dump({"matchesApplied": applied, "ratings": ratings}, f, indent=4)
+    
+    print(f"Calibrated {applied} matches -> {OUTPUT_DIR}/elo-calibrated.json")
