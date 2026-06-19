@@ -1,0 +1,123 @@
+{
+    "generatedAt": 1781889578.1430552,
+    "method": "Walk-forward out-of-sample: each match predicted from ratings built only on prior matches; Elo updated after. Burn-in skipped.",
+    "totalMatches": 47979,
+    "evaluated": 17312,
+    "burnIn": 20000.0,
+    "outcomeSplit": {
+        "home": 0.4798,
+        "draw": 0.2311,
+        "away": 0.2891
+    },
+    "model": {
+        "accuracy": 0.5884,
+        "brier": 0.5263,
+        "logloss": 0.8939,
+        "rps": 0.1766,
+        "ece": 0.005,
+        "favouriteAccuracy": 0.6888,
+        "favouriteCount": 10792
+    },
+    "baselines": {
+        "alwaysHome": 0.4798,
+        "eloPickNoDraw": 0.5509,
+        "uniformBrier": 0.6667,
+        "uniformLogloss": 1.0986,
+        "uniformRps": 0.2393
+    },
+    "calibration": {
+        "bins": [
+            {
+                "range": [
+                    0.0,
+                    0.1
+                ],
+                "n": 5250,
+                "avgPred": 0.0529,
+                "obsFreq": 0.053
+            },
+            {
+                "range": [
+                    0.1,
+                    0.2
+                ],
+                "n": 8161,
+                "avgPred": 0.1518,
+                "obsFreq": 0.1423
+            },
+            {
+                "range": [
+                    0.2,
+                    0.3
+                ],
+                "n": 18399,
+                "avgPred": 0.2595,
+                "obsFreq": 0.259
+            },
+            {
+                "range": [
+                    0.3,
+                    0.4
+                ],
+                "n": 4929,
+                "avgPred": 0.3493,
+                "obsFreq": 0.3502
+            },
+            {
+                "range": [
+                    0.4,
+                    0.5
+                ],
+                "n": 4405,
+                "avgPred": 0.4489,
+                "obsFreq": 0.4422
+            },
+            {
+                "range": [
+                    0.5,
+                    0.6
+                ],
+                "n": 3613,
+                "avgPred": 0.5486,
+                "obsFreq": 0.5602
+            },
+            {
+                "range": [
+                    0.6,
+                    0.7
+                ],
+                "n": 2828,
+                "avgPred": 0.6476,
+                "obsFreq": 0.6549
+            },
+            {
+                "range": [
+                    0.7,
+                    0.8
+                ],
+                "n": 2030,
+                "avgPred": 0.7457,
+                "obsFreq": 0.7399
+            },
+            {
+                "range": [
+                    0.8,
+                    0.9
+                ],
+                "n": 2023,
+                "avgPred": 0.8511,
+                "obsFreq": 0.872
+            },
+            {
+                "range": [
+                    0.9,
+                    1.0
+                ],
+                "n": 298,
+                "avgPred": 0.9162,
+                "obsFreq": 0.9799
+            }
+        ],
+        "ece": 0.005
+    }
+}

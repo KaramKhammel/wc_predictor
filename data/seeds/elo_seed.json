@@ -1,0 +1,1518 @@
+{
+    "generatedAt": "2026-06-19T17:04:56.318794+00:00",
+    "source": "data/raw/results.csv",
+    "formerNames": "data/reference/former_names.csv",
+    "method": "elo_seed_from_first_history_window_with_sample_shrinkage",
+    "baseRating": 1500,
+    "priorMatches": 30,
+    "seedWindow": {
+        "start": "1930-01-01",
+        "endExclusive": "1980-01-01",
+        "years": 50,
+        "matches": 10667
+    },
+    "calibrationWindow": {
+        "start": "1980-01-01",
+        "endExclusive": "2026-06-11",
+        "matchesAvailable": 37312
+    },
+    "aliasesApplied": {
+        "United States -> USA": 775,
+        "United States Virgin Islands -> US Virgin Islands": 78
+    },
+    "ratings": {
+        "afghanistan": 1417,
+        "albania": 1413,
+        "alderney": 1291,
+        "algeria": 1619,
+        "angola": 1499,
+        "antigua-and-barbuda": 1460,
+        "argentina": 1884,
+        "armenia": 1499,
+        "aruba": 1469,
+        "australia": 1645,
+        "austria": 1773,
+        "azerbaijan": 1500,
+        "bahamas": 1499,
+        "bahrain": 1418,
+        "bangladesh": 1419,
+        "barbados": 1424,
+        "basque-country": 1545,
+        "belarus": 1500,
+        "belgium": 1717,
+        "benin": 1438,
+        "bermuda": 1412,
+        "bolivia": 1490,
+        "botswana": 1474,
+        "brazil": 1934,
+        "brittany": 1500,
+        "brunei": 1457,
+        "bulgaria": 1538,
+        "burkina-faso": 1432,
+        "burundi": 1478,
+        "cambodia": 1435,
+        "cameroon": 1535,
+        "canada": 1477,
+        "cape-verde": 1496,
+        "catalonia": 1503,
+        "central-african-republic": 1491,
+        "chad": 1491,
+        "chile": 1570,
+        "china": 1661,
+        "colombia": 1476,
+        "comoros": 1492,
+        "congo": 1523,
+        "cook-islands": 1487,
+        "corsica": 1501,
+        "costa-rica": 1583,
+        "croatia": 1528,
+        "cuba": 1429,
+        "curacao": 1384,
+        "cyprus": 1283,
+        "czechoslovakia": 1727,
+        "denmark": 1518,
+        "djibouti": 1482,
+        "dominica": 1472,
+        "dominican-republic": 1497,
+        "dr-congo": 1594,
+        "ecuador": 1394,
+        "egypt": 1656,
+        "el-salvador": 1484,
+        "england": 1852,
+        "equatorial-guinea": 1500,
+        "estonia": 1332,
+        "eswatini": 1488,
+        "ethiopia": 1465,
+        "faroe-islands": 1483,
+        "fiji": 1505,
+        "finland": 1390,
+        "france": 1760,
+        "french-guiana": 1461,
+        "gabon": 1466,
+        "gambia": 1451,
+        "georgia": 1500,
+        "german-dr": 1721,
+        "germany": 1917,
+        "ghana": 1644,
+        "greece": 1546,
+        "grenada": 1529,
+        "guadeloupe": 1463,
+        "guam": 1489,
+        "guatemala": 1537,
+        "guernsey": 1628,
+        "guinea": 1598,
+        "guinea-bissau": 1503,
+        "guyana": 1375,
+        "haiti": 1617,
+        "honduras": 1505,
+        "hong-kong": 1491,
+        "hungary": 1647,
+        "iceland": 1354,
+        "india": 1380,
+        "indonesia": 1389,
+        "iran": 1690,
+        "iraq": 1741,
+        "israel": 1691,
+        "italy": 1832,
+        "ivory-coast": 1568,
+        "jamaica": 1352,
+        "japan": 1564,
+        "jersey": 1623,
+        "jordan": 1428,
+        "kazakhstan": 1500,
+        "kenya": 1520,
+        "kernow": 1499,
+        "kiribati": 1489,
+        "kuwait": 1689,
+        "kyrgyzstan": 1499,
+        "laos": 1324,
+        "latvia": 1444,
+        "lebanon": 1454,
+        "lesotho": 1437,
+        "liberia": 1471,
+        "libya": 1513,
+        "lithuania": 1432,
+        "luxembourg": 1197,
+        "macau": 1487,
+        "madagascar": 1498,
+        "malawi": 1608,
+        "malaysia": 1592,
+        "maldives": 1491,
+        "mali": 1567,
+        "malta": 1354,
+        "manchukuo": 1496,
+        "martinique": 1534,
+        "mauritania": 1429,
+        "mauritius": 1478,
+        "mexico": 1667,
+        "moldova": 1500,
+        "mongolia": 1492,
+        "montenegro": 1499,
+        "morocco": 1635,
+        "mozambique": 1496,
+        "myanmar": 1491,
+        "nepal": 1500,
+        "netherlands": 1866,
+        "new-caledonia": 1595,
+        "new-zealand": 1611,
+        "nicaragua": 1318,
+        "niger": 1436,
+        "nigeria": 1657,
+        "north-korea": 1667,
+        "north-vietnam": 1488,
+        "northern-cyprus": 1500,
+        "northern-ireland": 1563,
+        "norway": 1382,
+        "oman": 1407,
+        "pakistan": 1420,
+        "palestine": 1465,
+        "panama": 1345,
+        "papua-new-guinea": 1469,
+        "paraguay": 1634,
+        "peru": 1631,
+        "philippines": 1314,
+        "poland": 1808,
+        "portugal": 1675,
+        "puerto-rico": 1360,
+        "qatar": 1448,
+        "republic-of-ireland": 1564,
+        "reunion": 1500,
+        "romania": 1634,
+        "russia": 1726,
+        "rwanda": 1499,
+        "saarland": 1491,
+        "saint-kitts-and-nevis": 1489,
+        "saint-lucia": 1438,
+        "saint-vincent-and-the-grenadines": 1548,
+        "samoa": 1491,
+        "sao-tome-and-principe": 1496,
+        "saudi-arabia": 1509,
+        "scotland": 1672,
+        "senegal": 1546,
+        "serbia": 1500,
+        "seychelles": 1475,
+        "sierra-leone": 1455,
+        "silesia": 1504,
+        "singapore": 1334,
+        "slovakia": 1479,
+        "solomon-islands": 1491,
+        "somalia": 1424,
+        "south-africa": 1550,
+        "south-korea": 1897,
+        "spain": 1729,
+        "sri-lanka": 1337,
+        "sudan": 1536,
+        "suriname": 1593,
+        "sweden": 1558,
+        "switzerland": 1479,
+        "syria": 1447,
+        "tahiti": 1650,
+        "taiwan": 1416,
+        "tanzania": 1502,
+        "thailand": 1484,
+        "togo": 1483,
+        "tonga": 1493,
+        "trinidad-and-tobago": 1522,
+        "tunisia": 1697,
+        "turkey": 1527,
+        "tuvalu": 1491,
+        "uganda": 1524,
+        "ukraine": 1501,
+        "united-arab-emirates": 1405,
+        "uruguay": 1554,
+        "usa": 1422,
+        "vanuatu": 1485,
+        "venezuela": 1336,
+        "vietnam": 1500,
+        "vietnam-republic": 1380,
+        "wales": 1645,
+        "wallis-islands-and-futuna": 1481,
+        "western-australia": 1441,
+        "yemen": 1404,
+        "yemen-dpr": 1469,
+        "yugoslavia": 1741,
+        "zambia": 1641,
+        "zanzibar": 1266,
+        "zimbabwe": 1494
+    },
+    "teams": {
+        "afghanistan": {
+            "name": "Afghanistan",
+            "matches": 17,
+            "learnedRating": 1271.78,
+            "reliability": 0.3617
+        },
+        "albania": {
+            "name": "Albania",
+            "matches": 49,
+            "learnedRating": 1360.33,
+            "reliability": 0.6203
+        },
+        "alderney": {
+            "name": "Alderney",
+            "matches": 42,
+            "learnedRating": 1141.87,
+            "reliability": 0.5833
+        },
+        "algeria": {
+            "name": "Algeria",
+            "matches": 110,
+            "learnedRating": 1651.12,
+            "reliability": 0.7857
+        },
+        "angola": {
+            "name": "Angola",
+            "matches": 7,
+            "learnedRating": 1493.2,
+            "reliability": 0.1892
+        },
+        "antigua-and-barbuda": {
+            "name": "Antigua and Barbuda",
+            "matches": 12,
+            "learnedRating": 1361.2,
+            "reliability": 0.2857
+        },
+        "argentina": {
+            "name": "Argentina",
+            "matches": 361,
+            "learnedRating": 1916.27,
+            "reliability": 0.9233
+        },
+        "armenia": {
+            "name": "Armenia",
+            "matches": 1,
+            "learnedRating": 1482.69,
+            "reliability": 0.0323
+        },
+        "aruba": {
+            "name": "Aruba",
+            "matches": 50,
+            "learnedRating": 1449.7,
+            "reliability": 0.625
+        },
+        "australia": {
+            "name": "Australia",
+            "matches": 122,
+            "learnedRating": 1680.74,
+            "reliability": 0.8026
+        },
+        "austria": {
+            "name": "Austria",
+            "matches": 313,
+            "learnedRating": 1799.26,
+            "reliability": 0.9125
+        },
+        "azerbaijan": {
+            "name": "Azerbaijan",
+            "matches": 1,
+            "learnedRating": 1488.23,
+            "reliability": 0.0323
+        },
+        "bahamas": {
+            "name": "Bahamas",
+            "matches": 1,
+            "learnedRating": 1479.96,
+            "reliability": 0.0323
+        },
+        "bahrain": {
+            "name": "Bahrain",
+            "matches": 51,
+            "learnedRating": 1369.24,
+            "reliability": 0.6296
+        },
+        "bangladesh": {
+            "name": "Bangladesh",
+            "matches": 21,
+            "learnedRating": 1303.28,
+            "reliability": 0.4118
+        },
+        "barbados": {
+            "name": "Barbados",
+            "matches": 54,
+            "learnedRating": 1382.32,
+            "reliability": 0.6429
+        },
+        "basque-country": {
+            "name": "Basque Country",
+            "matches": 19,
+            "learnedRating": 1616.71,
+            "reliability": 0.3878
+        },
+        "belarus": {
+            "name": "Belarus",
+            "matches": 11,
+            "learnedRating": 1501.23,
+            "reliability": 0.2683
+        },
+        "belgium": {
+            "name": "Belgium",
+            "matches": 294,
+            "learnedRating": 1739.38,
+            "reliability": 0.9074
+        },
+        "benin": {
+            "name": "Benin",
+            "matches": 48,
+            "learnedRating": 1399.81,
+            "reliability": 0.6154
+        },
+        "bermuda": {
+            "name": "Bermuda",
+            "matches": 27,
+            "learnedRating": 1314.56,
+            "reliability": 0.4737
+        },
+        "bolivia": {
+            "name": "Bolivia",
+            "matches": 122,
+            "learnedRating": 1487.73,
+            "reliability": 0.8026
+        },
+        "botswana": {
+            "name": "Botswana",
+            "matches": 9,
+            "learnedRating": 1388.05,
+            "reliability": 0.2308
+        },
+        "brazil": {
+            "name": "Brazil",
+            "matches": 376,
+            "learnedRating": 1968.26,
+            "reliability": 0.9261
+        },
+        "brittany": {
+            "name": "Brittany",
+            "matches": 1,
+            "learnedRating": 1509.32,
+            "reliability": 0.0323
+        },
+        "brunei": {
+            "name": "Brunei",
+            "matches": 7,
+            "learnedRating": 1273.6,
+            "reliability": 0.1892
+        },
+        "bulgaria": {
+            "name": "Bulgaria",
+            "matches": 276,
+            "learnedRating": 1541.94,
+            "reliability": 0.902
+        },
+        "burkina-faso": {
+            "name": "Burkina Faso",
+            "matches": 47,
+            "learnedRating": 1389.1,
+            "reliability": 0.6104
+        },
+        "burundi": {
+            "name": "Burundi",
+            "matches": 10,
+            "learnedRating": 1410.55,
+            "reliability": 0.25
+        },
+        "cambodia": {
+            "name": "Cambodia",
+            "matches": 89,
+            "learnedRating": 1413.21,
+            "reliability": 0.7479
+        },
+        "cameroon": {
+            "name": "Cameroon",
+            "matches": 84,
+            "learnedRating": 1546.85,
+            "reliability": 0.7368
+        },
+        "canada": {
+            "name": "Canada",
+            "matches": 39,
+            "learnedRating": 1459.78,
+            "reliability": 0.5652
+        },
+        "cape-verde": {
+            "name": "Cape Verde",
+            "matches": 3,
+            "learnedRating": 1451.13,
+            "reliability": 0.0909
+        },
+        "catalonia": {
+            "name": "Catalonia",
+            "matches": 9,
+            "learnedRating": 1511.21,
+            "reliability": 0.2308
+        },
+        "central-african-republic": {
+            "name": "Central African Republic",
+            "matches": 10,
+            "learnedRating": 1462.52,
+            "reliability": 0.25
+        },
+        "chad": {
+            "name": "Chad",
+            "matches": 7,
+            "learnedRating": 1453.62,
+            "reliability": 0.1892
+        },
+        "chile": {
+            "name": "Chile",
+            "matches": 277,
+            "learnedRating": 1577.24,
+            "reliability": 0.9023
+        },
+        "china": {
+            "name": "China",
+            "matches": 120,
+            "learnedRating": 1701.63,
+            "reliability": 0.8
+        },
+        "colombia": {
+            "name": "Colombia",
+            "matches": 119,
+            "learnedRating": 1470.28,
+            "reliability": 0.7987
+        },
+        "comoros": {
+            "name": "Comoros",
+            "matches": 4,
+            "learnedRating": 1428.73,
+            "reliability": 0.1176
+        },
+        "congo": {
+            "name": "Congo",
+            "matches": 113,
+            "learnedRating": 1528.48,
+            "reliability": 0.7902
+        },
+        "cook-islands": {
+            "name": "Cook Islands",
+            "matches": 3,
+            "learnedRating": 1355.39,
+            "reliability": 0.0909
+        },
+        "corsica": {
+            "name": "Corsica",
+            "matches": 1,
+            "learnedRating": 1515.63,
+            "reliability": 0.0323
+        },
+        "costa-rica": {
+            "name": "Costa Rica",
+            "matches": 155,
+            "learnedRating": 1598.82,
+            "reliability": 0.8378
+        },
+        "croatia": {
+            "name": "Croatia",
+            "matches": 18,
+            "learnedRating": 1573.36,
+            "reliability": 0.375
+        },
+        "cuba": {
+            "name": "Cuba",
+            "matches": 88,
+            "learnedRating": 1405.12,
+            "reliability": 0.7458
+        },
+        "curacao": {
+            "name": "Cura\u00e7ao",
+            "matches": 180,
+            "learnedRating": 1364.47,
+            "reliability": 0.8571
+        },
+        "cyprus": {
+            "name": "Cyprus",
+            "matches": 64,
+            "learnedRating": 1181.54,
+            "reliability": 0.6809
+        },
+        "czechoslovakia": {
+            "name": "Czechoslovakia",
+            "matches": 317,
+            "learnedRating": 1748.77,
+            "reliability": 0.9135
+        },
+        "denmark": {
+            "name": "Denmark",
+            "matches": 315,
+            "learnedRating": 1519.72,
+            "reliability": 0.913
+        },
+        "djibouti": {
+            "name": "Djibouti",
+            "matches": 7,
+            "learnedRating": 1403.57,
+            "reliability": 0.1892
+        },
+        "dominica": {
+            "name": "Dominica",
+            "matches": 49,
+            "learnedRating": 1454.2,
+            "reliability": 0.6203
+        },
+        "dominican-republic": {
+            "name": "Dominican Republic",
+            "matches": 3,
+            "learnedRating": 1463.66,
+            "reliability": 0.0909
+        },
+        "dr-congo": {
+            "name": "DR Congo",
+            "matches": 126,
+            "learnedRating": 1616.66,
+            "reliability": 0.8077
+        },
+        "ecuador": {
+            "name": "Ecuador",
+            "matches": 124,
+            "learnedRating": 1368.91,
+            "reliability": 0.8052
+        },
+        "egypt": {
+            "name": "Egypt",
+            "matches": 126,
+            "learnedRating": 1693.55,
+            "reliability": 0.8077
+        },
+        "el-salvador": {
+            "name": "El Salvador",
+            "matches": 133,
+            "learnedRating": 1480.56,
+            "reliability": 0.816
+        },
+        "england": {
+            "name": "England",
+            "matches": 375,
+            "learnedRating": 1879.82,
+            "reliability": 0.9259
+        },
+        "equatorial-guinea": {
+            "name": "Equatorial Guinea",
+            "matches": 1,
+            "learnedRating": 1489.44,
+            "reliability": 0.0323
+        },
+        "estonia": {
+            "name": "Estonia",
+            "matches": 79,
+            "learnedRating": 1267.67,
+            "reliability": 0.7248
+        },
+        "eswatini": {
+            "name": "Eswatini",
+            "matches": 9,
+            "learnedRating": 1447.63,
+            "reliability": 0.2308
+        },
+        "ethiopia": {
+            "name": "Ethiopia",
+            "matches": 95,
+            "learnedRating": 1454.56,
+            "reliability": 0.76
+        },
+        "faroe-islands": {
+            "name": "Faroe Islands",
+            "matches": 5,
+            "learnedRating": 1384.14,
+            "reliability": 0.1429
+        },
+        "fiji": {
+            "name": "Fiji",
+            "matches": 36,
+            "learnedRating": 1509.83,
+            "reliability": 0.5455
+        },
+        "finland": {
+            "name": "Finland",
+            "matches": 265,
+            "learnedRating": 1377.26,
+            "reliability": 0.8983
+        },
+        "france": {
+            "name": "France",
+            "matches": 310,
+            "learnedRating": 1785.3,
+            "reliability": 0.9118
+        },
+        "french-guiana": {
+            "name": "French Guiana",
+            "matches": 27,
+            "learnedRating": 1417.69,
+            "reliability": 0.4737
+        },
+        "gabon": {
+            "name": "Gabon",
+            "matches": 36,
+            "learnedRating": 1438.45,
+            "reliability": 0.5455
+        },
+        "gambia": {
+            "name": "Gambia",
+            "matches": 31,
+            "learnedRating": 1403.24,
+            "reliability": 0.5082
+        },
+        "georgia": {
+            "name": "Georgia",
+            "matches": 1,
+            "learnedRating": 1513.08,
+            "reliability": 0.0323
+        },
+        "german-dr": {
+            "name": "German DR",
+            "matches": 190,
+            "learnedRating": 1755.89,
+            "reliability": 0.8636
+        },
+        "germany": {
+            "name": "Germany",
+            "matches": 370,
+            "learnedRating": 1950.5,
+            "reliability": 0.925
+        },
+        "ghana": {
+            "name": "Ghana",
+            "matches": 153,
+            "learnedRating": 1672.27,
+            "reliability": 0.8361
+        },
+        "greece": {
+            "name": "Greece",
+            "matches": 145,
+            "learnedRating": 1555.42,
+            "reliability": 0.8286
+        },
+        "grenada": {
+            "name": "Grenada",
+            "matches": 41,
+            "learnedRating": 1550.39,
+            "reliability": 0.5775
+        },
+        "guadeloupe": {
+            "name": "Guadeloupe",
+            "matches": 68,
+            "learnedRating": 1446.99,
+            "reliability": 0.6939
+        },
+        "guam": {
+            "name": "Guam",
+            "matches": 6,
+            "learnedRating": 1433.59,
+            "reliability": 0.1667
+        },
+        "guatemala": {
+            "name": "Guatemala",
+            "matches": 119,
+            "learnedRating": 1546.44,
+            "reliability": 0.7987
+        },
+        "guernsey": {
+            "name": "Guernsey",
+            "matches": 71,
+            "learnedRating": 1682.35,
+            "reliability": 0.703
+        },
+        "guinea": {
+            "name": "Guinea",
+            "matches": 126,
+            "learnedRating": 1621.21,
+            "reliability": 0.8077
+        },
+        "guinea-bissau": {
+            "name": "Guinea-Bissau",
+            "matches": 13,
+            "learnedRating": 1508.92,
+            "reliability": 0.3023
+        },
+        "guyana": {
+            "name": "Guyana",
+            "matches": 89,
+            "learnedRating": 1332.42,
+            "reliability": 0.7479
+        },
+        "haiti": {
+            "name": "Haiti",
+            "matches": 176,
+            "learnedRating": 1637.41,
+            "reliability": 0.8544
+        },
+        "honduras": {
+            "name": "Honduras",
+            "matches": 88,
+            "learnedRating": 1506.86,
+            "reliability": 0.7458
+        },
+        "hong-kong": {
+            "name": "Hong Kong",
+            "matches": 146,
+            "learnedRating": 1489.56,
+            "reliability": 0.8295
+        },
+        "hungary": {
+            "name": "Hungary",
+            "matches": 401,
+            "learnedRating": 1657.75,
+            "reliability": 0.9304
+        },
+        "iceland": {
+            "name": "Iceland",
+            "matches": 82,
+            "learnedRating": 1300.65,
+            "reliability": 0.7321
+        },
+        "india": {
+            "name": "India",
+            "matches": 163,
+            "learnedRating": 1358.26,
+            "reliability": 0.8446
+        },
+        "indonesia": {
+            "name": "Indonesia",
+            "matches": 266,
+            "learnedRating": 1376.44,
+            "reliability": 0.8986
+        },
+        "iran": {
+            "name": "Iran",
+            "matches": 101,
+            "learnedRating": 1746.8,
+            "reliability": 0.771
+        },
+        "iraq": {
+            "name": "Iraq",
+            "matches": 131,
+            "learnedRating": 1796.43,
+            "reliability": 0.8137
+        },
+        "israel": {
+            "name": "Israel",
+            "matches": 134,
+            "learnedRating": 1734.19,
+            "reliability": 0.8171
+        },
+        "italy": {
+            "name": "Italy",
+            "matches": 279,
+            "learnedRating": 1867.3,
+            "reliability": 0.9029
+        },
+        "ivory-coast": {
+            "name": "Ivory Coast",
+            "matches": 111,
+            "learnedRating": 1586.06,
+            "reliability": 0.7872
+        },
+        "jamaica": {
+            "name": "Jamaica",
+            "matches": 126,
+            "learnedRating": 1316.74,
+            "reliability": 0.8077
+        },
+        "japan": {
+            "name": "Japan",
+            "matches": 177,
+            "learnedRating": 1574.97,
+            "reliability": 0.8551
+        },
+        "jersey": {
+            "name": "Jersey",
+            "matches": 69,
+            "learnedRating": 1675.78,
+            "reliability": 0.697
+        },
+        "jordan": {
+            "name": "Jordan",
+            "matches": 20,
+            "learnedRating": 1320.04,
+            "reliability": 0.4
+        },
+        "kazakhstan": {
+            "name": "Kazakhstan",
+            "matches": 1,
+            "learnedRating": 1509.27,
+            "reliability": 0.0323
+        },
+        "kenya": {
+            "name": "Kenya",
+            "matches": 216,
+            "learnedRating": 1522.52,
+            "reliability": 0.878
+        },
+        "kernow": {
+            "name": "Kernow",
+            "matches": 3,
+            "learnedRating": 1487.53,
+            "reliability": 0.0909
+        },
+        "kiribati": {
+            "name": "Kiribati",
+            "matches": 3,
+            "learnedRating": 1376.74,
+            "reliability": 0.0909
+        },
+        "kuwait": {
+            "name": "Kuwait",
+            "matches": 104,
+            "learnedRating": 1743.16,
+            "reliability": 0.7761
+        },
+        "kyrgyzstan": {
+            "name": "Kyrgyzstan",
+            "matches": 2,
+            "learnedRating": 1488.7,
+            "reliability": 0.0625
+        },
+        "laos": {
+            "name": "Laos",
+            "matches": 39,
+            "learnedRating": 1189.37,
+            "reliability": 0.5652
+        },
+        "latvia": {
+            "name": "Latvia",
+            "matches": 79,
+            "learnedRating": 1423.02,
+            "reliability": 0.7248
+        },
+        "lebanon": {
+            "name": "Lebanon",
+            "matches": 28,
+            "learnedRating": 1404.29,
+            "reliability": 0.4828
+        },
+        "lesotho": {
+            "name": "Lesotho",
+            "matches": 23,
+            "learnedRating": 1355.45,
+            "reliability": 0.434
+        },
+        "liberia": {
+            "name": "Liberia",
+            "matches": 36,
+            "learnedRating": 1447.24,
+            "reliability": 0.5455
+        },
+        "libya": {
+            "name": "Libya",
+            "matches": 99,
+            "learnedRating": 1516.66,
+            "reliability": 0.7674
+        },
+        "lithuania": {
+            "name": "Lithuania",
+            "matches": 73,
+            "learnedRating": 1404.41,
+            "reliability": 0.7087
+        },
+        "luxembourg": {
+            "name": "Luxembourg",
+            "matches": 104,
+            "learnedRating": 1109.5,
+            "reliability": 0.7761
+        },
+        "macau": {
+            "name": "Macau",
+            "matches": 8,
+            "learnedRating": 1439.86,
+            "reliability": 0.2105
+        },
+        "madagascar": {
+            "name": "Madagascar",
+            "matches": 59,
+            "learnedRating": 1497.25,
+            "reliability": 0.6629
+        },
+        "malawi": {
+            "name": "Malawi",
+            "matches": 129,
+            "learnedRating": 1633.21,
+            "reliability": 0.8113
+        },
+        "malaysia": {
+            "name": "Malaysia",
+            "matches": 350,
+            "learnedRating": 1599.57,
+            "reliability": 0.9211
+        },
+        "maldives": {
+            "name": "Maldives",
+            "matches": 3,
+            "learnedRating": 1398.36,
+            "reliability": 0.0909
+        },
+        "mali": {
+            "name": "Mali",
+            "matches": 84,
+            "learnedRating": 1590.58,
+            "reliability": 0.7368
+        },
+        "malta": {
+            "name": "Malta",
+            "matches": 55,
+            "learnedRating": 1274.71,
+            "reliability": 0.6471
+        },
+        "manchukuo": {
+            "name": "Manchukuo",
+            "matches": 3,
+            "learnedRating": 1455.67,
+            "reliability": 0.0909
+        },
+        "martinique": {
+            "name": "Martinique",
+            "matches": 94,
+            "learnedRating": 1544.88,
+            "reliability": 0.7581
+        },
+        "mauritania": {
+            "name": "Mauritania",
+            "matches": 17,
+            "learnedRating": 1303.96,
+            "reliability": 0.3617
+        },
+        "mauritius": {
+            "name": "Mauritius",
+            "matches": 81,
+            "learnedRating": 1469.21,
+            "reliability": 0.7297
+        },
+        "mexico": {
+            "name": "Mexico",
+            "matches": 253,
+            "learnedRating": 1686.33,
+            "reliability": 0.894
+        },
+        "moldova": {
+            "name": "Moldova",
+            "matches": 1,
+            "learnedRating": 1510.51,
+            "reliability": 0.0323
+        },
+        "mongolia": {
+            "name": "Mongolia",
+            "matches": 4,
+            "learnedRating": 1432.85,
+            "reliability": 0.1176
+        },
+        "montenegro": {
+            "name": "Montenegro",
+            "matches": 3,
+            "learnedRating": 1492.8,
+            "reliability": 0.0909
+        },
+        "morocco": {
+            "name": "Morocco",
+            "matches": 118,
+            "learnedRating": 1669.6,
+            "reliability": 0.7973
+        },
+        "mozambique": {
+            "name": "Mozambique",
+            "matches": 8,
+            "learnedRating": 1480.36,
+            "reliability": 0.2105
+        },
+        "myanmar": {
+            "name": "Myanmar",
+            "matches": 234,
+            "learnedRating": 1490.34,
+            "reliability": 0.8864
+        },
+        "nepal": {
+            "name": "Nepal",
+            "matches": 1,
+            "learnedRating": 1488.87,
+            "reliability": 0.0323
+        },
+        "netherlands": {
+            "name": "Netherlands",
+            "matches": 283,
+            "learnedRating": 1904.82,
+            "reliability": 0.9042
+        },
+        "new-caledonia": {
+            "name": "New Caledonia",
+            "matches": 81,
+            "learnedRating": 1630.61,
+            "reliability": 0.7297
+        },
+        "new-zealand": {
+            "name": "New Zealand",
+            "matches": 93,
+            "learnedRating": 1647.4,
+            "reliability": 0.7561
+        },
+        "nicaragua": {
+            "name": "Nicaragua",
+            "matches": 43,
+            "learnedRating": 1191.04,
+            "reliability": 0.589
+        },
+        "niger": {
+            "name": "Niger",
+            "matches": 23,
+            "learnedRating": 1352.27,
+            "reliability": 0.434
+        },
+        "nigeria": {
+            "name": "Nigeria",
+            "matches": 159,
+            "learnedRating": 1686.3,
+            "reliability": 0.8413
+        },
+        "north-korea": {
+            "name": "North Korea",
+            "matches": 62,
+            "learnedRating": 1748.48,
+            "reliability": 0.6739
+        },
+        "north-vietnam": {
+            "name": "North Vietnam",
+            "matches": 24,
+            "learnedRating": 1473.9,
+            "reliability": 0.4444
+        },
+        "northern-cyprus": {
+            "name": "Northern Cyprus",
+            "matches": 1,
+            "learnedRating": 1493.31,
+            "reliability": 0.0323
+        },
+        "northern-ireland": {
+            "name": "Northern Ireland",
+            "matches": 201,
+            "learnedRating": 1572.18,
+            "reliability": 0.8701
+        },
+        "norway": {
+            "name": "Norway",
+            "matches": 304,
+            "learnedRating": 1370.11,
+            "reliability": 0.9102
+        },
+        "oman": {
+            "name": "Oman",
+            "matches": 16,
+            "learnedRating": 1233.08,
+            "reliability": 0.3478
+        },
+        "pakistan": {
+            "name": "Pakistan",
+            "matches": 53,
+            "learnedRating": 1375.03,
+            "reliability": 0.6386
+        },
+        "palestine": {
+            "name": "Palestine",
+            "matches": 25,
+            "learnedRating": 1422.06,
+            "reliability": 0.4545
+        },
+        "panama": {
+            "name": "Panama",
+            "matches": 101,
+            "learnedRating": 1299.19,
+            "reliability": 0.771
+        },
+        "papua-new-guinea": {
+            "name": "Papua New Guinea",
+            "matches": 22,
+            "learnedRating": 1427.7,
+            "reliability": 0.4231
+        },
+        "paraguay": {
+            "name": "Paraguay",
+            "matches": 250,
+            "learnedRating": 1650.29,
+            "reliability": 0.8929
+        },
+        "peru": {
+            "name": "Peru",
+            "matches": 232,
+            "learnedRating": 1647.7,
+            "reliability": 0.8855
+        },
+        "philippines": {
+            "name": "Philippines",
+            "matches": 57,
+            "learnedRating": 1215.69,
+            "reliability": 0.6552
+        },
+        "poland": {
+            "name": "Poland",
+            "matches": 300,
+            "learnedRating": 1839.11,
+            "reliability": 0.9091
+        },
+        "portugal": {
+            "name": "Portugal",
+            "matches": 190,
+            "learnedRating": 1702.97,
+            "reliability": 0.8636
+        },
+        "puerto-rico": {
+            "name": "Puerto Rico",
+            "matches": 35,
+            "learnedRating": 1240.28,
+            "reliability": 0.5385
+        },
+        "qatar": {
+            "name": "Qatar",
+            "matches": 46,
+            "learnedRating": 1414.5,
+            "reliability": 0.6053
+        },
+        "republic-of-ireland": {
+            "name": "Republic of Ireland",
+            "matches": 174,
+            "learnedRating": 1574.6,
+            "reliability": 0.8529
+        },
+        "reunion": {
+            "name": "R\u00e9union",
+            "matches": 44,
+            "learnedRating": 1500.28,
+            "reliability": 0.5946
+        },
+        "romania": {
+            "name": "Romania",
+            "matches": 246,
+            "learnedRating": 1650.35,
+            "reliability": 0.8913
+        },
+        "russia": {
+            "name": "Russia",
+            "matches": 242,
+            "learnedRating": 1753.69,
+            "reliability": 0.8897
+        },
+        "rwanda": {
+            "name": "Rwanda",
+            "matches": 2,
+            "learnedRating": 1487.63,
+            "reliability": 0.0625
+        },
+        "saarland": {
+            "name": "Saarland",
+            "matches": 9,
+            "learnedRating": 1461.41,
+            "reliability": 0.2308
+        },
+        "saint-kitts-and-nevis": {
+            "name": "Saint Kitts and Nevis",
+            "matches": 5,
+            "learnedRating": 1420.83,
+            "reliability": 0.1429
+        },
+        "saint-lucia": {
+            "name": "Saint Lucia",
+            "matches": 39,
+            "learnedRating": 1390.08,
+            "reliability": 0.5652
+        },
+        "saint-vincent-and-the-grenadines": {
+            "name": "Saint Vincent and the Grenadines",
+            "matches": 42,
+            "learnedRating": 1581.6,
+            "reliability": 0.5833
+        },
+        "samoa": {
+            "name": "Samoa",
+            "matches": 3,
+            "learnedRating": 1400.63,
+            "reliability": 0.0909
+        },
+        "sao-tome-and-principe": {
+            "name": "S\u00e3o Tom\u00e9 and Pr\u00edncipe",
+            "matches": 4,
+            "learnedRating": 1464.4,
+            "reliability": 0.1176
+        },
+        "saudi-arabia": {
+            "name": "Saudi Arabia",
+            "matches": 48,
+            "learnedRating": 1514.88,
+            "reliability": 0.6154
+        },
+        "scotland": {
+            "name": "Scotland",
+            "matches": 284,
+            "learnedRating": 1690.26,
+            "reliability": 0.9045
+        },
+        "senegal": {
+            "name": "Senegal",
+            "matches": 97,
+            "learnedRating": 1559.75,
+            "reliability": 0.7638
+        },
+        "serbia": {
+            "name": "Serbia",
+            "matches": 1,
+            "learnedRating": 1484.63,
+            "reliability": 0.0323
+        },
+        "seychelles": {
+            "name": "Seychelles",
+            "matches": 13,
+            "learnedRating": 1417.75,
+            "reliability": 0.3023
+        },
+        "sierra-leone": {
+            "name": "Sierra Leone",
+            "matches": 50,
+            "learnedRating": 1427.78,
+            "reliability": 0.625
+        },
+        "silesia": {
+            "name": "Silesia",
+            "matches": 7,
+            "learnedRating": 1521.91,
+            "reliability": 0.1892
+        },
+        "singapore": {
+            "name": "Singapore",
+            "matches": 233,
+            "learnedRating": 1312.67,
+            "reliability": 0.8859
+        },
+        "slovakia": {
+            "name": "Slovakia",
+            "matches": 14,
+            "learnedRating": 1434.43,
+            "reliability": 0.3182
+        },
+        "solomon-islands": {
+            "name": "Solomon Islands",
+            "matches": 19,
+            "learnedRating": 1477.37,
+            "reliability": 0.3878
+        },
+        "somalia": {
+            "name": "Somalia",
+            "matches": 22,
+            "learnedRating": 1319.25,
+            "reliability": 0.4231
+        },
+        "south-africa": {
+            "name": "South Africa",
+            "matches": 23,
+            "learnedRating": 1616.24,
+            "reliability": 0.434
+        },
+        "south-korea": {
+            "name": "South Korea",
+            "matches": 313,
+            "learnedRating": 1935.1,
+            "reliability": 0.9125
+        },
+        "spain": {
+            "name": "Spain",
+            "matches": 210,
+            "learnedRating": 1761.28,
+            "reliability": 0.875
+        },
+        "sri-lanka": {
+            "name": "Sri Lanka",
+            "matches": 32,
+            "learnedRating": 1184.01,
+            "reliability": 0.5161
+        },
+        "sudan": {
+            "name": "Sudan",
+            "matches": 91,
+            "learnedRating": 1548.53,
+            "reliability": 0.7521
+        },
+        "suriname": {
+            "name": "Suriname",
+            "matches": 173,
+            "learnedRating": 1609.18,
+            "reliability": 0.8522
+        },
+        "sweden": {
+            "name": "Sweden",
+            "matches": 405,
+            "learnedRating": 1561.81,
+            "reliability": 0.931
+        },
+        "switzerland": {
+            "name": "Switzerland",
+            "matches": 319,
+            "learnedRating": 1476.48,
+            "reliability": 0.914
+        },
+        "syria": {
+            "name": "Syria",
+            "matches": 57,
+            "learnedRating": 1419.31,
+            "reliability": 0.6552
+        },
+        "tahiti": {
+            "name": "Tahiti",
+            "matches": 65,
+            "learnedRating": 1719.59,
+            "reliability": 0.6842
+        },
+        "taiwan": {
+            "name": "Taiwan",
+            "matches": 80,
+            "learnedRating": 1385.1,
+            "reliability": 0.7273
+        },
+        "tanzania": {
+            "name": "Tanzania",
+            "matches": 160,
+            "learnedRating": 1502.58,
+            "reliability": 0.8421
+        },
+        "thailand": {
+            "name": "Thailand",
+            "matches": 296,
+            "learnedRating": 1482.1,
+            "reliability": 0.908
+        },
+        "togo": {
+            "name": "Togo",
+            "matches": 76,
+            "learnedRating": 1476.91,
+            "reliability": 0.717
+        },
+        "tonga": {
+            "name": "Tonga",
+            "matches": 4,
+            "learnedRating": 1437.27,
+            "reliability": 0.1176
+        },
+        "trinidad-and-tobago": {
+            "name": "Trinidad and Tobago",
+            "matches": 199,
+            "learnedRating": 1525.71,
+            "reliability": 0.869
+        },
+        "tunisia": {
+            "name": "Tunisia",
+            "matches": 130,
+            "learnedRating": 1742.76,
+            "reliability": 0.8125
+        },
+        "turkey": {
+            "name": "Turkey",
+            "matches": 165,
+            "learnedRating": 1531.94,
+            "reliability": 0.8462
+        },
+        "tuvalu": {
+            "name": "Tuvalu",
+            "matches": 5,
+            "learnedRating": 1433.94,
+            "reliability": 0.1429
+        },
+        "uganda": {
+            "name": "Uganda",
+            "matches": 206,
+            "learnedRating": 1527.78,
+            "reliability": 0.8729
+        },
+        "ukraine": {
+            "name": "Ukraine",
+            "matches": 2,
+            "learnedRating": 1510.28,
+            "reliability": 0.0625
+        },
+        "united-arab-emirates": {
+            "name": "United Arab Emirates",
+            "matches": 28,
+            "learnedRating": 1302.5,
+            "reliability": 0.4828
+        },
+        "uruguay": {
+            "name": "Uruguay",
+            "matches": 309,
+            "learnedRating": 1559.17,
+            "reliability": 0.9115
+        },
+        "usa": {
+            "name": "USA",
+            "matches": 105,
+            "learnedRating": 1399.15,
+            "reliability": 0.7778
+        },
+        "vanuatu": {
+            "name": "Vanuatu",
+            "matches": 32,
+            "learnedRating": 1470.96,
+            "reliability": 0.5161
+        },
+        "venezuela": {
+            "name": "Venezuela",
+            "matches": 59,
+            "learnedRating": 1252.0,
+            "reliability": 0.6629
+        },
+        "vietnam": {
+            "name": "Vietnam",
+            "matches": 3,
+            "learnedRating": 1496.65,
+            "reliability": 0.0909
+        },
+        "vietnam-republic": {
+            "name": "Vietnam Republic",
+            "matches": 195,
+            "learnedRating": 1361.46,
+            "reliability": 0.8667
+        },
+        "wales": {
+            "name": "Wales",
+            "matches": 211,
+            "learnedRating": 1665.62,
+            "reliability": 0.8755
+        },
+        "wallis-islands-and-futuna": {
+            "name": "Wallis Islands and Futuna",
+            "matches": 6,
+            "learnedRating": 1384.91,
+            "reliability": 0.1667
+        },
+        "western-australia": {
+            "name": "Western Australia",
+            "matches": 30,
+            "learnedRating": 1382.45,
+            "reliability": 0.5
+        },
+        "yemen": {
+            "name": "Yemen",
+            "matches": 16,
+            "learnedRating": 1223.62,
+            "reliability": 0.3478
+        },
+        "yemen-dpr": {
+            "name": "Yemen DPR",
+            "matches": 15,
+            "learnedRating": 1407.85,
+            "reliability": 0.3333
+        },
+        "yugoslavia": {
+            "name": "Yugoslavia",
+            "matches": 348,
+            "learnedRating": 1761.69,
+            "reliability": 0.9206
+        },
+        "zambia": {
+            "name": "Zambia",
+            "matches": 169,
+            "learnedRating": 1666.21,
+            "reliability": 0.8492
+        },
+        "zanzibar": {
+            "name": "Zanzibar",
+            "matches": 81,
+            "learnedRating": 1178.82,
+            "reliability": 0.7297
+        },
+        "zimbabwe": {
+            "name": "Zimbabwe",
+            "matches": 29,
+            "learnedRating": 1488.31,
+            "reliability": 0.4915
+        }
+    }
+}
