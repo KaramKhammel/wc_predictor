@@ -1,5 +1,14 @@
 import json
 import argparse
+import os
+import sys
+
+
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__)).replace("\\", "/")
+PROJECT_DIR = os.path.dirname(SCRIPT_DIR)
+SRC_DIR = f"{PROJECT_DIR}/src"
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
 
 from elo import MAX_GOALS, match_prob, predicted_scoreline, score_matrix
 from config import CALIBRATED_RATINGS_FILE
@@ -54,6 +63,8 @@ if __name__ == "__main__":
         ha,
         max_goals=max(MAX_GOALS, args.matrix_goals),
     )
+    top_scores = top_scorelines(matrix, args.top_scores)
+    most_likely_probability, most_likely_home_goals, most_likely_away_goals = top_scores[0]
 
     venue = "   [neutral]" if ha == 0 else f"   [home adv {ha:g}]"
     print(f"\n  {args.home} (Elo {home_rating})  vs  {args.away} (Elo {away_rating}){venue}\n")
@@ -61,12 +72,11 @@ if __name__ == "__main__":
     print(f"  {'draw'.ljust(16)}      {pD * 100:5.1f}%  {'█' * round(pD * 30)}")
     print(f"  {args.away.ljust(16)} win  {pB * 100:5.1f}%  {'█' * round(pB * 30)}\n")
     print(f"  expected goals:  {xg_home:.2f} – {xg_away:.2f}\n")
-    # print(f"  predicted scoreline:  {scoreline[0]} – {scoreline[1]} (probability {scoreline[2] * 100:.1f}%)\n")
+    print(f"  most likely exact score:  {most_likely_home_goals} – {most_likely_away_goals} (probability {most_likely_probability * 100:.1f}%)")
+    print(f"  best score for top 1X2 outcome:  {scoreline[0]} – {scoreline[1]} (probability {scoreline[2] * 100:.1f}%)\n")
     print_score_matrix(matrix, args.home, args.away, args.matrix_goals)
 
     print("  most likely exact scores:")
-    for probability, home_goals, away_goals in top_scorelines(matrix, args.top_scores):
+    for probability, home_goals, away_goals in top_scores:
         print(f"    {home_goals}-{away_goals}: {probability * 100:4.1f}%")
     print()
-
-
